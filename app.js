@@ -23,6 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/resources', express.static(path.join(__dirname, "node_modules/angular")));
 app.use('/resources', express.static(path.join(__dirname, "node_modules/bootstrap")));
 app.use('/resources', express.static(path.join(__dirname, "node_modules/angular-ui-bootstrap")));
+app.use('/resources', express.static(path.join(__dirname, "node_modules/ui-router")));
 //Routes
 app.use('/', routes);
 app.use('/users', users);

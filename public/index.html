@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
     <head>
         <link rel="stylesheet" href="resources/dist/css/bootstrap.min.css" />
     </head>
-    <body>
-        <h2>Charlie's Home Page</h2>
-        <p>
-            Lorem ipsum dolor
-            Test
-        </p>        
+    <nav class="navbar navbar-inverse navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="navbar-brand" ui-sref="home">CJS</a>
+            <a class="navbar-text" ui-sref="about">About</a> 
+            <a class="navbar-text" ui-sref="blog">Blog</a>
+        </div>
+    </nav>
+    <body style="padding-top: 70px">
+        <div ui-view></div>     
     </body>
     <footer>
         <script src="resources/angular.min.js"></script>
         <script src="resources/dist/ui-bootstrap.js"></script>
+        <script src="resources/release/angular-ui-router.min.js"></script>
+        <script src="app/app.js"></script>
     </footer>
  </html>
     
